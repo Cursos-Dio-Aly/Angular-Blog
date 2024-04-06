@@ -4,6 +4,9 @@ img {
 }
 
 #profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 45px;
     height: 45px;
     box-shadow: 3px 13px 9px -3px rgba(0, 0, 0, 0.1);
@@ -15,11 +18,14 @@ img {
         color: #fff;
         font-weight: 600;
         text-align: center;
+        background-color: transparent;
     }
 }
 
 a {
     color: #6b6b6b;
+    font-weight: 300;
+    font-size: .625rem;
 }
 
 a:hover {
@@ -64,6 +70,20 @@ nav {
             li {
                 list-style: none;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 932px) {
+    nav {
+        a {
+            color: #6b6b6b;
+            font-weight: 300;
+            font-size: 1.625rem;
+        }
+
+        .right {
+            display: none;
         }
     }
 }

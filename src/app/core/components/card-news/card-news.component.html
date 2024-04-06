@@ -1,1 +1,15 @@
-<p>card-news works!</p>
+<h2>News - Abril</h2>
+<div class="container-footer">
+    <div class="card" *ngFor="let post of smallPosts">
+        <div class="news-image" *ngFor="let post of smallPosts">
+            <div class="image-post">
+                <img [src]="post.image" alt="news" width="250">
+            </div>
+            <hr>
+            <div class="descriptions">
+                <p>{{ post.dataPost }}</p>
+                <h3>{{ post.titulo }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
