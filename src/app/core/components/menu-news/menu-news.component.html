@@ -3,12 +3,24 @@
     <div class="card-left">
         <div class="news-image">
             <div class="image-post">
-                <img src="#" alt="news">
+                <img src="https://tm.ibxk.com.br/2024/02/21/21104029198057.jpg?ims=532x336" alt="news" width="600">
+                <small>Fonte: https://www.tecmundo.com.br/programacao</small>
             </div>
-            <small>Date post</small>
-            <h2>Title</h2>
-            <p>Description</p>
+            <h3>Google lança Gemma, uma IA de código aberto baseado no Geminini</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad soluta inventore quibusdam unde amet
+                consectetur quia, exercitationem saepe ut? Ex enim natus obcaecati illum dicta nemo earum recusandae
+                quisquam.</p>
         </div>
     </div>
-    <div class="card-right"></div>
+    <div class="card-right">
+        <div class="news-image-right" *ngFor="let post of smallPosts">
+            <div class="image-post-right">
+                <img [src]="post.image" alt="news" width="200">
+            </div>
+            <div class="descriptions">
+                <p>{{ post.dataPost }}</p>
+                <h3>{{ post.titulo }}</h3>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,3 +1,82 @@
 h2 {
-    text-align: start;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+
+.container-main {
+    width: 90%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+
+    .card-left {
+        width: 50%;
+        height: 65%;
+
+        .news-image {
+            h3 {
+                width: 60%;
+                margin-top: 1rem;
+            }
+
+            p {
+                width: 60%;
+                margin-top: 1rem;
+                font-weight: 300;
+            }
+
+            .image-post {
+                width: 65.2%;
+                display: flex;
+                flex-direction: column;
+                gap: .325rem;
+
+                img {
+                    border-radius: 1rem;
+                }
+
+                small {
+                    font-size: .625rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .card-right {
+        width: 50%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .news-image-right {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .image-post-right {
+                img {
+                    border-radius: 1rem;
+                }
+            }
+
+            .descriptions {
+                width: 100%;
+                margin-top: .625rem;
+
+                h3 {
+                    margin-top: .625rem;
+                    width: 80%;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: .625rem;
+                }
+            }
+        }
+    }
 }
